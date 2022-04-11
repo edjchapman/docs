@@ -1,6 +1,6 @@
 # Documentation
 
-### [Go to Docs](https://edjchapman.github.io/docs/)
+### [Go to Docs](https://edjchapman.github.io/docs)
 
 ---
 
