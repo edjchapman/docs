@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+site_name: Ed's Docs
+
+theme:
+  name: material
+  # Toggle light/dark mode
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  # Font
+  font:
+    text: Roboto
+  # Logo
+  logo: assets/img/logo-512x512.png
+  favicon: assets/img/favicon.ico
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/edjchapman
+  generator: false
+
+copyright: Copyright &copy; 2022 Ed Chapman
+
+plugins:
+  # Adds 'last update' to pages
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+      enable_creation_date: true
+
+markdown_extensions:
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      use_pygments: true
+      anchor_linenums: true
+      linenums: true
+  - pymdownx.superfences
